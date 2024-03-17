@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bestilling av kinobiletter</title>
+    <script src="index.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1><br>
+
+<!-- Nedtrekkmeny for valg av film-->
+<label for="film">Velg film:</label>
+<select name="film" id="film">
+    <option disabled selected hidden="">Velg film her</option>
+    <option>Oppenheimer</option>
+    <option>Barbie</option>
+    <option>Anyone But You</option>
+    <option>Dune</option>
+</select><br><br>
+
+<!--Inputboks for antall billetter-->
+<label for="antall">Antall:</label>
+<input type="number" id="antall"/><span id="antall-feil" class="feilmelding" style="font-weight: bold; color: red;"></span><br><br>
+
+<!--Tabell for input av kundeinformasjon, der hver input har et tilhørende span-element for visning av eventuell feilmelding-->
+<table>
+    <tr><td>Fornavn: </td><td><input type="text" id="fornavn"/><span id="fornavn-feil" style="font-weight: bold; color: red;"></span></td></tr>
+    <tr><td>Etternavn: </td><td><input type="text" id="etternavn"/><span id="etternavn-feil" style="font-weight: bold; color: red;"></span></td></tr>
+    <tr><td>Telefonnr: </td><td><input type="text" id="telefonnr"/><span id="telefonnr-feil" style="font-weight: bold; color: red;"></span></td></tr>
+    <tr><td>E-post: </td><td><input type="text" id="e-post"/><span id="epost-feil" style="font-weight: bold; color: red;"></span></td></tr>
+    <tr><td><button onclick="kjopbillett()">Kjøp billett</button></td></tr>
+</table>
+
+<h2>Alle billetter</h2>
+<div id="billettvisning"></div> <!-- Div container for visning av billetter som er kjøpt-->
+<br>
+<!--Knapp for sletting av billetter-->
+<button onclick="slettbilletter()">Slett alle billettene</button>
+</body>
+</html>
