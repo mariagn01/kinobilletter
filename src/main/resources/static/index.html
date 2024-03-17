@@ -20,11 +20,23 @@
             <form class="form">
                 <div class="row">
                 <div class="form-group col">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Velg film
+                        </button>
+                        <select name="film" id="film" class="dropdown-menu">
+                                <option class="dropdown-item">Oppenheimer</option>
+                                <option class="dropdown-item">Barbie</option>
+                                <option class="dropdown-item">Anyone But You</option>
+                                <option class="dropdown-item">Dune</option>
+                        </select>
+                    </div>
+
+
                     <label for="film">Velg film:</label>
                     <select name="film" id="film">
-                        <option disabled selected hidden="">Velg film her</option>
                         <option>Oppenheimer</option>
-                        <option>Barbie</option>
+                        <option >Barbie</option>
                         <option>Anyone But You</option>
                         <option>Dune</option>
                     </select>
