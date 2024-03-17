@@ -35,7 +35,7 @@ function visBilletter () {
 }
 
 function formaterData(billetter) {
-    let ut= "<table><tr>" +
+    let ut= "<table class='table'><tr>" +
         "<th>Film</th><th>Antall</th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>E-post</th>" +
         "</tr>";
     for (const billett of billetter){
