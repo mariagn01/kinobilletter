@@ -77,18 +77,26 @@ function slettbilletter () {
 
 //Funksjon for validering av inputfelt, der hvert felt valideres ved if-setninger
 function validerInputs() {
-    let antall = document.getElementById("antall").value;
-    let fornavn = document.getElementById("fornavn").value;
-    let etternavn = document.getElementById("etternavn").value;
-    let telefonnr = document.getElementById("telefonnr").value;
-    let epost = document.getElementById("e-post").value;
+    let film = $("#film").val()
+    let antall = $("#antall").val()
+    let fornavn = $("#fornavn").val()
+    let etternavn = $("#etternavn").val()
+    let telefonnr = $("#telefonnr").val()
+    let epost = $("#e-post").val()
 
     //Nullstiller feilmeldinger
-    document.getElementById("antall-feil").textContent = "";
-    document.getElementById("fornavn-feil").textContent = "";
-    document.getElementById("etternavn-feil").textContent = "";
-    document.getElementById("telefonnr-feil").textContent = "";
-    document.getElementById("epost-feil").textContent = "";
+    $("#film-feil").text("")
+    $("#antall-feil").text("")
+    $("#fornavn-feil").text("")
+    $("#etternavn-feil").text("")
+    $("#telefonnr-feil").text("")
+    $("#epost-feil-feil").text("")
+
+    //Sjekker at film er valgt
+    if (!film) {
+        $("#film-feil").html("Velg en film")
+        return false;
+    }
 
     //Sjekker at antall er over 0 og at det er skrevet inn et positivt heltall
     if (antall <= 0 || !Number.isInteger(parseInt(antall))) {
