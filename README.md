@@ -14,4 +14,6 @@ Github repo for oblig 1 (med kommentarer og commits): https://github.com/mariagn
 
 Kort beskrivelse av applikasjonen:
 
-Felt for å velge film, angi antall billetter, og legge inn kundeinformasjon som fornavn, etternavn, telefonnummer og e-post er bygget opp med HTML, mens Javascript filen har tre hovedfunksjoner: En funksjon for å kjøpe billettt, en for å slette billetter, og en for validering av inputs fra bruker for å sjekke korrekt format. Billetter lagres i et array. Dette tømmes når billetter slettes. Brukt RegEx for validering av e-post og telefonnummer.
+Applikasjonen lar bruker legge inn bestillinger av kinobilletter. Input lagres i et array på server, mens funksjoner for kjøp av billett, validering av inputs og sletting av billetter er laget med JavaScript. Billetter lagres i et array, og arrayet tømmes når billettene slettes. Billettene listet opp i en tabell. Applikasjonen er stylet med Bootstrap v.5. 
+
+Se "screenshots"-mappe for skjermbilder. 
