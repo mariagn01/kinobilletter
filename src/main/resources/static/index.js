@@ -11,7 +11,7 @@ function hentFilmer() {
 function formaterFilmliste(filmer) {
     let filmliste = "<select name='film' id='film'>"
     for (const film of filmer) {
-        filmliste += "<opton>+film+</opton>"
+        filmliste += "<option value='" + film + "'>" + film + "</option>";
     }
     filmliste += "</select>"
     $("#filmliste").html(filmliste);
