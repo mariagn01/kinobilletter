@@ -37,6 +37,7 @@ function kjopbillett () {
 
         //Tømmer inputfelt
         $("#film").val("")
+        $("#fornavn").val("")
         $("#etternavn").val("")
         $("#telefonnr").val("")
         $("#e-post").val("")
