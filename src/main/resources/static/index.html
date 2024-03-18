@@ -16,30 +16,12 @@
             <h1 class="h1 text-center">Bestilling av kinobilletter</h1>
             <br><br>
 
-            <!--Tabell for input av kundeinformasjon, der hver input har et tilhørende span-element for visning av eventuell feilmelding-->
+            <!--Skjema for input fra kunde, hver input har et tilhørende span-element for visning av eventuell feilmelding-->
             <form class="form">
                 <div class="row">
                 <div class="form-group col">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Velg film
-                        </button>
-                        <select name="film" id="film" class="dropdown-menu">
-                                <option class="dropdown-item">Oppenheimer</option>
-                                <option class="dropdown-item">Barbie</option>
-                                <option class="dropdown-item">Anyone But You</option>
-                                <option class="dropdown-item">Dune</option>
-                        </select>
-                    </div>
-
-
-                    <label for="film">Velg film:</label>
-                    <select name="film" id="film">
-                        <option>Oppenheimer</option>
-                        <option >Barbie</option>
-                        <option>Anyone But You</option>
-                        <option>Dune</option>
-                    </select>
+                    <label for="filmliste">Velg film:</label>
+                    <div id="filmliste"></div>
                 </div>
                 <div class="form-group col">
                     <label for="antall" class="form-label">Antall:</label>

@@ -9,6 +9,15 @@ import java.util.ArrayList;
 public class BillettController {
     private final ArrayList<Billett> billetter = new ArrayList<>();
 
+    @GetMapping("/hentFilmer")
+    public ArrayList<String> hentFilmer() {
+        ArrayList<String> filmliste = new ArrayList<>();
+        filmliste.add("Oppenheimer");
+        filmliste.add("Barbie");
+        filmliste.add("Anyone Like You");
+        filmliste.add("Dune");
+        return filmliste;
+    }
     @PostMapping("/lagre")
     public void lagreBillett(Billett innBillett) {
         billetter.add(innBillett);

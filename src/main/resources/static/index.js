@@ -1,3 +1,21 @@
+$(function (){
+    hentFilmer();
+})
+
+function hentFilmer() {
+    $.get("/hentFilmer", function(filmliste) {
+        formaterFilmliste(filmliste)
+    })
+}
+
+function formaterFilmliste(filmer) {
+    let filmliste = "<select name='film' id='film'>"
+    for (const film of filmer) {
+        filmliste += "<opton>+film+</opton>"
+    }
+    filmliste += "</select>"
+    $("#filmliste").html(filmliste);
+}
 
 function kjopbillett () {
 //Bruker en egen valideringsfunksjon for å sjekke inputfelter før denne funksjonen kjøres
