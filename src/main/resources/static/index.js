@@ -9,7 +9,8 @@ function hentFilmer() {
 }
 
 function formaterFilmliste(filmer) {
-    let filmliste = "<select name='film' id='film'>"
+    let filmliste = "<select class='form-select' name='film' id='film'>" +
+        "<option selected disabled placeholder='Velg film'>Velg film</option>"
     for (const film of filmer) {
         filmliste += "<option value='" + film + "'>" + film + "</option>";
     }
